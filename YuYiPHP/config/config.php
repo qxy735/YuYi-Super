@@ -17,6 +17,12 @@ return array(
 
     'log_write_start' => false,
 
+    'tpl_file_path' => BASE_PATH . '/YuYiPHP/data/tpl',
+
+    'success_tpl_file' => 'success.html',
+
+    'error_tpl_file' => 'error.html',
+
     'aliases' => array(
         'Config' => 'System\Support\Facades\Config',
         'Log' => 'System\Support\Facades\Log',
