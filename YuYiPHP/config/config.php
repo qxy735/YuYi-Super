@@ -25,6 +25,8 @@ return array(
 
     'error_tpl_file' => 'error.html',
 
+    'verify_code' => 'code',
+
     'aliases' => array(
         'Config' => 'System\Support\Facades\Config',
         'Log' => 'System\Support\Facades\Log',
@@ -33,5 +35,6 @@ return array(
         'Redirect' => 'System\Support\Facades\Redirect',
         'Input' => 'System\Support\Facades\Input',
         'Session' => 'System\Support\Facades\Session',
+        'Image' => 'System\Support\Facades\Image',
     )
 );
