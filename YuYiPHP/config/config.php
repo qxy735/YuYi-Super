@@ -32,5 +32,6 @@ return array(
         'Controller' => 'System\Routing\Controller',
         'Redirect' => 'System\Support\Facades\Redirect',
         'Input' => 'System\Support\Facades\Input',
+        'Session' => 'System\Support\Facades\Session',
     )
 );
