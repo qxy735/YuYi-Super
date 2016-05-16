@@ -17,11 +17,17 @@ ClassLoader::addDirectories(array(
     base_path() . '/vendor/yuyiphp/framework/src/System/View/sysplugins',
 ));
 
-// 定义日志文件
-$logFile = 'log-' . php_sapi_name() . '_' . date('Y-m-d') . '.txt';
+// 日志处理
+if (Config::get('config.log_write_start')) {
+    // 开启日志
+    ini_get('log_errors') or ini_set('log_errors', true);
 
-// 设置日志存放目录
-Log::setPath(storage_path() . '/logs/' . $logFile);
+    // 定义日志文件
+    $logFile = 'log-' . php_sapi_name() . '_' . date('Y-m-d') . '.txt';
+
+    // 设置日志存放目录
+    Log::setPath(storage_path() . '/logs/' . $logFile);
+}
 
 // 加载路由过滤文件
 require base_path() . '/filters.php';

@@ -9,6 +9,8 @@
 return array(
     'timezone' => 'PRC',
 
+    'session_start' => true,
+
     'url_mode' => URL_MODE_NORMAL,
 
     'url_module' => 'm',
