@@ -27,6 +27,14 @@ return array(
 
     'verify_code' => 'code',
 
+    'left_delimiter' => '<{',
+
+    'right_delimiter' => '}>',
+
+    'cache_start' => false,
+
+    'cache_life_time' => 60,
+
     'aliases' => array(
         'Config' => 'System\Support\Facades\Config',
         'Log' => 'System\Support\Facades\Log',
