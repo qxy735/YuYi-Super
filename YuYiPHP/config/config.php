@@ -30,6 +30,7 @@ return array(
         'Log' => 'System\Support\Facades\Log',
         'Route' => 'System\Support\Facades\Route',
         'Controller' => 'System\Routing\Controller',
-        'Redirect' => 'System\Support\Facades\Redirect'
+        'Redirect' => 'System\Support\Facades\Redirect',
+        'Input' => 'System\Support\Facades\Input',
     )
 );
