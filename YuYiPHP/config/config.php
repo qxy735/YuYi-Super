@@ -36,5 +36,6 @@ return array(
         'Input' => 'System\Support\Facades\Input',
         'Session' => 'System\Support\Facades\Session',
         'Image' => 'System\Support\Facades\Image',
+        'File' => 'System\Filesystem\File',
     )
 );
